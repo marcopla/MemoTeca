@@ -9,6 +9,7 @@
         id="pensamento"
         name="pensamento"
         placeholder="Digite o pensamento"
+        [value]="pensamento.conteudo"
       >
       <label for="pensamento">Autoria ou fonte</label>
       <input 
@@ -17,6 +18,7 @@
         id="autoria"
         name="autoria"
         placeholder="Digite a autoria ou fonte"
+        [value]="pensamento.autoria"
       >
       <label for="modelo">Selecione o modelo do card:</label>
       <div class="container-radio">
