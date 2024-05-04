@@ -17,8 +17,6 @@
         id="autoria"
         formControlName="autoria"
         placeholder="Digite a autoria ou fonte"
- 
-        
       >
       <label for="modelo">Selecione o modelo do card:</label>
       <div class="container-radio">
@@ -38,8 +36,8 @@
           Prévia:
           <div class="modelo modelo1 ff-roboto-mono">
             <img src="../../../../assets/imagens/modelo1.png" alt="Aspas azuis">
-            <p class="conteudo">{{}}</p>
-            <p class="conteudo"><b>{{}}</b></p>
+            <p class="conteudo">{{ formulario.get('conteudo')?.value }}</p>
+            <p class="conteudo"><b>{{ formulario.get('autoria')?.value }}</b></p>
           </div>
         </div>
         <div class="radio-modelo">
@@ -58,8 +56,8 @@
           Prévia:
           <div class="modelo modelo2 ff-roboto-mono">
             <img src="../../../../assets/imagens/modelo2.png" alt="Aspas azul claro">
-            <p class="conteudo">{{}}</p>
-            <p class="conteudo"><b>{{}}</b></p>
+            <p class="conteudo">{{ formulario.get('conteudo')?.value }}</p>
+            <p class="conteudo"><b>{{ formulario.get('autoria')?.value }}</b></p>
           </div>
         </div>
         <div class="radio-modelo">
